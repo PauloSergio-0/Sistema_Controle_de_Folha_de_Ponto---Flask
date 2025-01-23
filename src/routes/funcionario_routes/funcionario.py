@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 
 def routes_funcionario(app:Flask):
     
-    @app.route("/funcionario/cadastro", method =["POST"])
+    @app.route("/funcionario/cadastro", methods =["POST"])
     def cadastro():
         json_funcionario = request.json()
         if json_funcionario:
