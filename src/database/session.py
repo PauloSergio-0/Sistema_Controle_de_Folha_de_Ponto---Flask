@@ -10,10 +10,17 @@ class Database:
     
     def create_db(self):
         
-        if not os.path.exists(self.url):
+        if  not os.path.exists(self.url):
             os.makedirs(self.url, exist_ok=True)
             con.connect(self.connetionDB)
+            
             
         else:
             con.connect(self.connetionDB)
         
+    def exist_db(self):
+        
+        if not os.path.exists(self.connetionDB):
+            return False
+        
+        return True
