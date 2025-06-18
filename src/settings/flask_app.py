@@ -1,8 +1,7 @@
 from flask import Flask
 from routes import init_routes
 from database.session import Database
-from model.funcionario_model.funcionario_model import Funcionario
-from model.ponto_registro_model.folha_de_ponto_model import FolhaPonto
+
 
 #test
 from model import Funcionario
